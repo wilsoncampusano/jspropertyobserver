@@ -2,7 +2,6 @@
  * Created by wilson.campusano on 10/24/2014.
  */
 var Book = function Book( title, price ) {
-
 	var priceChangingCallbacks = [],
 			priceChangedCallbacks = [];
 
@@ -12,7 +11,6 @@ var Book = function Book( title, price ) {
 				if ( !priceChangingCallbacks[idx]( this, val ) ) {
 					return price;
 				}
-
 			}
 			price = val;
 
